@@ -3,7 +3,7 @@
     img(src='https://wgom.github.io/platzimusic/dist/logo.png')
     h1 PlatziMusic
 
-    select(v-model='selectedCountry')
+    select(v-model='selectedCountry') 
       option(v-for='(country, index) in countries' v-bind:value='country.name' v-bind:key='index') {{ country.name }}
 
     spinner(v-show="loading")
